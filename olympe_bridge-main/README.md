@@ -3,13 +3,7 @@ This ROS package contains interface to Olympe SDK. Currently, it supports only t
 
 ## Overview
 
-**Author:** Andriy Sarabakha<br />
-**Affiliation:** [Technical University of Munich (TUM)](https://www.tum.de/en/), Germany<br />
-**Maintainer:** Andriy Sarabakha, andriy.sarabakha@tum.de
-
-**Keywords:** Parrot, UAV, controller
-
-This is research code, expect that it changes often and any fitness for a particular purpose is disclaimed.
+This is copying．
 
 ## Installation
 
@@ -28,7 +22,7 @@ This package has been tested with **python3** in **ROS Melodic**/**Ubuntu 18.04*
       repo sync
       ./products/olympe/linux/env/postinst
       ./build.sh -p olympe-linux -A all final -j
-    
+
 ### Troubleshooting
 
 #### Issue:
@@ -51,7 +45,7 @@ Use Google Repo binary:
     PATH="${HOME}/.bin:${PATH}"
     curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
     chmod a+rx ~/.bin/repo
-    
+
 #### Issue:
     /usr/bin/env: ‘python’: No such file or directory
 #### Solution:
@@ -59,7 +53,7 @@ Set python3 as default:
 
     echo 'alias python=python3' >> ~/.bash_aliases
     source ~/.bash_aliases
-    
+
 Create a symbolic link to python3:
 
     sudo ln -s /usr/bin/python3 /usr/bin/python
@@ -67,7 +61,7 @@ Create a symbolic link to python3:
 ## Check
     source ~/code/parrot-groundsdk/./products/olympe/linux/env/shell
     python -c 'import olympe; print("Installation OK")'
-    
+
 ### Troubleshooting
 
 #### Issue:
@@ -91,7 +85,7 @@ Set python3 as default:
 
     echo 'alias python=python3' >> ~/.bash_aliases
     source ~/.bash_aliases
-    
+
 ## Clone
 
 Clone the latest version from this repository into your catkin workspace using:
